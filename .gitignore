@@ -1,0 +1,50 @@
+# Archivos y directorios de compilación
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.dylib
+*.pdb
+*.idb
+*.suo
+*.ncb
+*.sdf
+*.vcxproj.user
+*.vcxproj.filters
+
+# Directorios generados por IDE
+.vscode/
+*.vs/
+Debug/
+Release/
+x64/
+
+# Archivos temporales
+*.tmp
+*.swp
+*.swo
+*.bak
+*.old
+
+# Archivos de configuración del sistema
+*.DS_Store
+*.Thumbs.db
+
+# Archivos de configuración de IDE
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# Archivos de configuración de CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Archivos de configuración de Visual Studio
+*.vcxproj.user
+*.vcxpro

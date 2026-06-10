@@ -1,0 +1,16 @@
+{
+  "proyecto": "CalculadoraIPV4",
+  "rama": "main",
+  "commit": "c084b82fffc77c7e8cf57a6d0f91053decf1bf51",
+  "pipeline": {
+    "estado": "failure",
+    "fechaejecucion": "20265810A025803+0"
+  },
+  "tests": {
+    "cobertura_codigo": "100%",
+    "fallidos": 1,
+    "exitosos": 0,
+    "totales": 1
+  },
+  "detalles": "compilacion mediante msbuild exitosa."
+}
