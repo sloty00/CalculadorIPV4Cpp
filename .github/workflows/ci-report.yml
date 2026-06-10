@@ -21,7 +21,7 @@ jobs:
       - name: compilar calculadoraipv4cpp
         run: |
           # Compilación en la raíz
-          msbuild CalculadoraIPV4Cpp.sln.sln /p:configuration=release
+          msbuild CalculadoraIPV4Cpp.sln /p:configuration=release
           
           # Verificación en la raíz
           if (test-path "x64/release/CalculadoraIPV4Cpp.sln.exe") {
