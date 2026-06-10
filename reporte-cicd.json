@@ -3,14 +3,14 @@
   "rama": "main",
   "commit": "cf34dd71f0a77a098fa6e0aab6283249cd143759",
   "pipeline": {
-    "estado": "success",
-    "fechaejecucion": "20265910A025925+0"
+    "fechaejecucion": "20260210A030218+0",
+    "estado": "success"
   },
   "tests": {
-    "exitosos": 0,
-    "totales": 1,
     "cobertura_codigo": "100%",
-    "fallidos": 1
+    "exitosos": 0,
+    "fallidos": 1,
+    "totales": 1
   },
   "detalles": "compilacion mediante msbuild exitosa."
 }
