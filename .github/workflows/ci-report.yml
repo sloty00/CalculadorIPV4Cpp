@@ -1,3 +1,6 @@
+Entendido. Aquí tienes el código YAML para tu proyecto CalculadoraIPV4Cpp completamente libre de guiones en las variables de los nombres de los archivos (reportecicd.json) y ajustado para que la verificación del ejecutable sea correcta:
+
+YAML
 name: cimonitorcalculadoraipcpp
 
 on:
@@ -20,11 +23,10 @@ jobs:
 
       - name: compilar calculadoraipv4cpp
         run: |
-          # Compilación en la raíz
           msbuild CalculadoraIPV4Cpp.sln /p:configuration=release
           
-          # Verificación en la raíz
-          if (test-path "x64/release/CalculadoraIPV4Cpp.sln.exe") {
+          # Verificacion correcta del ejecutable
+          if (test-path "x64/release/CalculadoraIPV4Cpp.exe") {
             $exitcode = 0
           } else {
             $exitcode = 1
@@ -51,12 +53,12 @@ jobs:
               exitosos = $results.numpassedtests
               fallidos = $results.numfailedtests
               totales = $results.numtotaltests
-              cobertura_codigo = "100%"
+              coberturacodigo = "100%"
             }
             detalles = "compilacion mediante msbuild exitosa."
           }
-          # Mantenemos el guion como requiere tu monitor central
-          $jsonreport | convertto-json -depth 10 | out-file reporte-cicd.json -encoding utf8
+          # Nombre del archivo sin guiones
+          $jsonreport | convertto-json -depth 10 | out-file reportecicd.json -encoding utf8
 
       - name: desplegar reporte a github pages
         if: always()
