@@ -53,7 +53,7 @@ jobs:
             }
             detalles = "compilacion mediante msbuild exitosa."
           }
-          $jsonreport | convertto-json -depth 10 | out-file reportecicd.json -encoding utf8
+          $jsonreport | convertto-json -depth 10 | out-file reporte-cicd.json -encoding utf8
 
       - name: desplegar reporte a github pages
         if: always()
