@@ -1,6 +1,3 @@
-Entendido. Aquí tienes el código YAML para tu proyecto CalculadoraIPV4Cpp completamente libre de guiones en las variables de los nombres de los archivos (reportecicd.json) y ajustado para que la verificación del ejecutable sea correcta:
-
-YAML
 name: cimonitorcalculadoraipcpp
 
 on:
