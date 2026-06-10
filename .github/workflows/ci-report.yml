@@ -22,7 +22,6 @@ jobs:
         run: |
           msbuild CalculadoraIPV4Cpp.sln /p:configuration=release
           
-          # Verificacion correcta del ejecutable
           if (test-path "x64/release/CalculadoraIPV4Cpp.exe") {
             $exitcode = 0
           } else {
@@ -54,7 +53,6 @@ jobs:
             }
             detalles = "compilacion mediante msbuild exitosa."
           }
-          # Nombre del archivo sin guiones
           $jsonreport | convertto-json -depth 10 | out-file reportecicd.json -encoding utf8
 
       - name: desplegar reporte a github pages
